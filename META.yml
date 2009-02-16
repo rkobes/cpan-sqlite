@@ -1,0 +1,75 @@
+--- #YAML:1.0
+name:         CPAN-SQLite
+version:      0.196
+installdirs:  site
+license:      perl
+abstract:     maintain and search a minimal CPAN database
+author:
+    - 'Randy Kobes <r.kobes@uwinnipeg.ca>'
+requires:
+    Archive::Tar:                  1.08
+    CPAN::DistnameInfo:            0
+    File::Spec:                    0
+    IO::Zlib:                      0
+    DBD::SQLite:                   0
+    File::HomeDir:                 0
+    LWP::Simple:                   0
+distribution_type: module
+provides:
+  CPAN::SQLite:
+    file: lib/CPAN/SQLite.pm
+    version: 0.196
+  CPAN::SQLite::Extract:
+    file: lib/CPAN/SQLite/Extract.pm
+    version: 0.196
+  CPAN::SQLite::Index:
+    file: lib/CPAN/SQLite/Index.pm
+    version: 0.196
+  CPAN::SQLite::Info:
+    file: lib/CPAN/SQLite/Info.pm
+    version: 0.196
+  CPAN::SQLite::Populate:
+    file: lib/CPAN/SQLite/Populate.pm
+    version: 0.196
+  CPAN::SQLite::Search:
+    file: lib/CPAN/SQLite/Search.pm
+    version: 0.196
+  CPAN::SQLite::State:
+    file: lib/CPAN/SQLite/State.pm
+    version: 0.196
+  CPAN::SQLite::Util:
+    file: lib/CPAN/SQLite/Util.pm
+    version: 0.196
+  CPAN::SQLite::META:
+    file: lib/CPAN/SQLite/META.pm
+    version: 0.196
+  CPAN::SQLite::DBI:
+    file: lib/CPAN/SQLite/DBI.pm
+    version: 0.196
+  CPAN::SQLite::DBI::Query:
+    file: lib/CPAN/SQLite/DBI/Query.pm
+    version: 0.196
+  CPAN::SQLite::DBI::Index:
+    file: lib/CPAN/SQLite/DBI/Index.pm
+    version: 0.196
+no_index:
+    file:
+        - t/dot-cpan/CPAN/TestConfig.pm
+        - t/lib/TestSQL.pm
+urls:
+   license: http://dev.perl.org/licenses/
+meta-spec:
+  version: 1.3
+  url: http://module-build.sourceforge.net/META-spec-v1.3.html
+resources:
+  license: http://dev.perl.org/licenses/
+  homepage: http://cpan-search.svn.sourceforge.net/viewvc/cpan-search/CPAN-SQLite/
+  bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=CPAN-SQLite
+  AnnoCPAN: http://annocpan.org/dist/CPAN-SQLite
+  CPANForum: http://www.cpanforum.com/dist/CPAN-SQLite
+  CPANTS: http://cpants.perl.org/dist/CPAN-SQLite
+  Rating: http://cpanratings.perl.org/d/CPAN-SQLite
+  SearchCPAN: http://search.cpan.org/~RKOBES/CPAN-SQLite/
+  Testers: http://cpantesters.perl.org/show/CPAN-SQLite.html
+  UWinnipeg: http://cpan.uwinnipeg.ca/dist/CPAN-SQLite
+generated_by: Randy Kobes

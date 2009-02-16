@@ -1,0 +1,87 @@
+Revision history for Perl extension CPAN::SQLite.
+
+0.196 June 6, 2008
+  - turn off creation of log files during indexing procedures
+    via setting $ENV{CPAN_SQLITE_NO_LOG_FILES}, as suggested
+    by DAGOLDEN:
+        http://rt.cpan.org/Ticket/Display.html?id=36411
+        
+0.195 Feb 16, 2008
+  - fix further bugs where sometimes a regex search for
+    distributions and/or modules, followed by a distribution
+    search for a specific distribution, didn't properly
+    populate the CONTAINSMODS field
+  - add CPAN::Shell->reload('index') in the t/05meta.t test
+    to ensure the database is created, and test that it has
+    non-zero size
+  - fix bug where sometimes a regex module search, followed
+    by a distribution search for a specific distribution,
+    didn't properly set the abstract and version fields
+  - fix bug in t/05meta_*.t tests so as to correctly compare modules
+    in a distribution.
+  - honour $Config::CPAN->{index_expire} to decide when to update
+    the database
+  - improved error checking for the exisitence of the database,
+    including also a check on the size, if it exists, when 
+    deciding whether to update or create the database.
+
+0.19 Feb 3, 2008
+  - fix bug whereby a query for a module, followed by a query for
+    the distribution containing that module, would only list the
+    module first queried for CONTAINSMODS
+  - fix (hopefully) failing tests on Darwin:
+       http://rt.cpan.org/Ticket/Display.html?id=28890
+    resulting from CPAN::MyConfig not getting picked up
+    from PERL5LIB (thanks to Michael Schwern and David Wheeler)
+  - have information messages printed out only if CPAN_SQLITE_DEBUG
+    is set, as requested at
+       http://rt.cpan.org/Ticket/Display.html?id=32740
+    (thanks to ZOFFIX)
+
+0.18 Aug 15, 2007
+  - as some older versions of DBD::SQLite don't support
+    "drop table if exists $table", use an alternate construction
+  - add vcmp function in TestSQL.pm to test equality of versions
+  - when testing with CPAN.pm, remove the database file
+    before testing
+
+0.15 July 26, 2007
+  - add a message of when the database was last updated:
+      http://rt.cpan.org/Ticket/Display.html?id=27953
+  - don't ignore a previously set PERL5LIB in the tests:
+      http://rt.cpan.org/Ticket/Display.html?id=28297
+
+0.1  Feb 17, 2007
+  - first non-developer release; no code changes from 0.1_04
+
+0.1_04 Jan 11, 2007
+  - improve diagnostics of some of the tests using Test::More
+  - check that we loaded the correct CPAN::Config in 05meta.t
+    (test suggested by Andreas Koenig)
+  - add auto_commit variable to the test's CPAN::Config, so
+    as to work with CPAN.pm 1.88_69
+
+0.1_03 Dec 31, 2006
+  - in the t/05meta.t test, remove an underscore from the version
+    strings, as older versions of CPAN::Version seem to have
+    problems comparing versions with underscores.
+  - don't try to update database if a $db_name-journal file
+    exists, indicating another process is updating the database
+  - in a regex search for Bundles within CPAN::SQLite::META,
+    don't prepend 'Bundle' if special regex characters are
+    present, to help in tab completion of Bundles within CPAN.pm
+  - get tab completion within CPAN.pm working
+
+0.1_02 Dec 21, 2006
+  - change name of database to cpandb.sql, and make it fixed,
+    as there was little need to have it configureable.
+  - support 
+       cpan> d ANDK/CPAN-xxx.tar.gz
+    for distributions.
+  - fixes to handle Bundle ids
+  - undef $sth after an $sth->finish, to help with concurrent access
+  - when using Test::More, use is(), rather than ok()
+
+0.1_01 Dec 12, 2006
+  - initial version, derived from a minimal version of
+    CPAN::Search::Lite
