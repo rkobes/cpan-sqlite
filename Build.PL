@@ -18,6 +18,7 @@ my $prereqs = {'File::Spec' => 0,
                'CPAN::DistnameInfo' => 0,
                'DBD::SQLite' => 0,
 	       'File::HomeDir' => 0,
+	       'LWP::Simple' => 0,
 	      };
 
 my $build = Module::Build->new(

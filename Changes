@@ -1,5 +1,9 @@
 Revision history for Perl extension CPAN::SQLite.
 
+0.197 Feb 16, 2009
+  - add LWP::Simple to prerequisites of Build.PL, to help CPAN testers:
+        http://www.cpantesters.org/show/CPAN-SQLite.html#CPAN-SQLite-0.196
+
 0.196 June 6, 2008
   - turn off creation of log files during indexing procedures
     via setting $ENV{CPAN_SQLITE_NO_LOG_FILES}, as suggested
