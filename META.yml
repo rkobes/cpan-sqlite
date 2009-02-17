@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:         CPAN-SQLite
-version:      0.196
+version:      0.197
 installdirs:  site
 license:      perl
 abstract:     maintain and search a minimal CPAN database
@@ -18,40 +18,40 @@ distribution_type: module
 provides:
   CPAN::SQLite:
     file: lib/CPAN/SQLite.pm
-    version: 0.196
+    version: 0.197
   CPAN::SQLite::Extract:
     file: lib/CPAN/SQLite/Extract.pm
-    version: 0.196
+    version: 0.197
   CPAN::SQLite::Index:
     file: lib/CPAN/SQLite/Index.pm
-    version: 0.196
+    version: 0.197
   CPAN::SQLite::Info:
     file: lib/CPAN/SQLite/Info.pm
-    version: 0.196
+    version: 0.197
   CPAN::SQLite::Populate:
     file: lib/CPAN/SQLite/Populate.pm
-    version: 0.196
+    version: 0.197
   CPAN::SQLite::Search:
     file: lib/CPAN/SQLite/Search.pm
-    version: 0.196
+    version: 0.197
   CPAN::SQLite::State:
     file: lib/CPAN/SQLite/State.pm
-    version: 0.196
+    version: 0.197
   CPAN::SQLite::Util:
     file: lib/CPAN/SQLite/Util.pm
-    version: 0.196
+    version: 0.197
   CPAN::SQLite::META:
     file: lib/CPAN/SQLite/META.pm
-    version: 0.196
+    version: 0.197
   CPAN::SQLite::DBI:
     file: lib/CPAN/SQLite/DBI.pm
-    version: 0.196
+    version: 0.197
   CPAN::SQLite::DBI::Query:
     file: lib/CPAN/SQLite/DBI/Query.pm
-    version: 0.196
+    version: 0.197
   CPAN::SQLite::DBI::Index:
     file: lib/CPAN/SQLite/DBI/Index.pm
-    version: 0.196
+    version: 0.197
 no_index:
     file:
         - t/dot-cpan/CPAN/TestConfig.pm
@@ -63,7 +63,7 @@ meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.3.html
 resources:
   license: http://dev.perl.org/licenses/
-  homepage: http://cpan-search.svn.sourceforge.net/viewvc/cpan-search/CPAN-SQLite/
+  homepage: http://github.com/rkobes/cpan-sqlite/tree/master
   bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=CPAN-SQLite
   AnnoCPAN: http://annocpan.org/dist/CPAN-SQLite
   CPANForum: http://www.cpanforum.com/dist/CPAN-SQLite

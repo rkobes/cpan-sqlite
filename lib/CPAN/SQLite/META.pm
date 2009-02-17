@@ -6,7 +6,7 @@ use base qw(Exporter);
 our @EXPORT_OK;
 @EXPORT_OK = qw(setup update);
 our $global_id;
-our $VERSION = '0.196';
+our $VERSION = '0.197';
 
 sub new {
   my ($class, $cpan_meta) = @_;

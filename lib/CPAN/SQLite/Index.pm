@@ -10,7 +10,7 @@ use File::Basename;
 use File::Path;
 use LWP::Simple qw(getstore is_success);
 
-our $VERSION = '0.196';
+our $VERSION = '0.197';
 unless ($ENV{CPAN_SQLITE_NO_LOG_FILES}) {
   $ENV{CPAN_SQLITE_DEBUG} = 1;
 }
