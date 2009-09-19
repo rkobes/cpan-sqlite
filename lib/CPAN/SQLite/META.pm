@@ -300,7 +300,7 @@ sub reload {
     warn qq{Database locked - cannot update.};
     return;
   }
-  my @args = ($^X, '-MCPAN::SQLite::META qw(setup update)', '-e');
+  my @args = ($^X, '-MCPAN::SQLite::META=setup,update', '-e1');
   if (-e $db && -s _) {
     my $mtime_db = (stat(_))[9];
     my $time_string = gmtime_string($mtime_db);
