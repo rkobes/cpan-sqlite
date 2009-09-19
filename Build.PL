@@ -15,6 +15,7 @@ my $goners = [qw(cpandb.sql
 my $prereqs = {'File::Spec' => 0,
                'Archive::Tar' => 1.08,
                'IO::Zlib' => 0,
+               'Compress::Zlib' => 0,
                'CPAN::DistnameInfo' => 0,
                'DBD::SQLite' => 0,
 	       'File::HomeDir' => 0,
