@@ -46,7 +46,10 @@ sub index {
 
   if ($self->{update_indices}) {
     warn qq{Fetching index files ...\n};
-    $self->fetch_cpan_indices();
+    $self->fetch_cpan_indices() or do {
+      warn qq{fetch_cpan_indices() failed};
+      return;
+    }
   }
 
   warn qq{Gathering information from index files ...\n};
@@ -88,7 +91,10 @@ sub fetch_cpan_indices {
       my $from = join '/', ($cpan, $indices->{$index}, $index);
       last if is_success(getstore($from, $file));
     }
-    die qq{Cannot retrieve $file} unless -f $file;
+    unless (-f $file) {
+      warn qq{Cannot retrieve '$file'};
+      return;
+    }
   }
   return 1;
 }

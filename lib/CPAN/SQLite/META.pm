@@ -300,7 +300,7 @@ sub reload {
     warn qq{Database locked - cannot update.};
     return;
   }
-  my @args = ($^X, '-MCPAN::SQLite::META=setup,update', '-e1');
+  my @args = ($^X, '-MCPAN::SQLite::META=setup,update', '-e');
   if (-e $db && -s _) {
     my $mtime_db = (stat(_))[9];
     my $time_string = gmtime_string($mtime_db);
@@ -326,12 +326,12 @@ sub reload {
 
 sub setup {
   my $obj = CPAN::SQLite->new(setup => 1);
-  $obj->index();
+  $obj->index() or die qq{CPAN::SQLite setup failed};
 }
 
 sub update {
   my $obj = CPAN::SQLite->new();
-  $obj->index();
+  $obj->index() or die qq{CPAN::SQLite update failed};
 }
 
 sub gmtime_string {
