@@ -5,7 +5,7 @@ installdirs:  site
 license:      perl
 abstract:     maintain and search a minimal CPAN database
 author:
-    - 'Randy Kobes <r.kobes@uwinnipeg.ca>'
+    - 'Randy Kobes <randy.kobes@gmail.com>'
 requires:
     Archive::Tar:                  1.08
     CPAN::DistnameInfo:            0
