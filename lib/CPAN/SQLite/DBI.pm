@@ -3,7 +3,7 @@ use strict;
 use warnings;
 require File::Spec;
 use DBI;
-our $VERSION = '0.197';
+our $VERSION = '0.198';
 
 use base qw(Exporter);
 our ($dbh, $tables, @EXPORT_OK);

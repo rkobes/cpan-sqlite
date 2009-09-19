@@ -1,7 +1,7 @@
 package CPAN::SQLite::Util;
 use strict;
 use warnings;
-our $VERSION = '0.197';
+our $VERSION = '0.198';
 
 use base qw(Exporter);
 our (@EXPORT_OK, %chaps, %modes,
