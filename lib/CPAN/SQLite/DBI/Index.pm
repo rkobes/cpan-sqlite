@@ -112,7 +112,7 @@ sub drop_table {
   my $sth = $dbh->prepare($sql);
   $sth->execute($table);
   if (defined $sth->fetchrow_array) {
-    $dbh->do(qq{drop table $table)}) or do {
+    $dbh->do(qq{drop table $table}) or do {
       $self->db_error($sth);
       return;
     };
