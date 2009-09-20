@@ -12,7 +12,7 @@ requires:
     File::Spec:                    0
     IO::Zlib:                      0
     DBD::SQLite:                   0
-    Compress::Zlib                 0
+    Compress::Zlib:                0
     File::HomeDir:                 0
     LWP::Simple:                   0
 distribution_type: module
