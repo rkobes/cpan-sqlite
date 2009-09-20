@@ -64,7 +64,7 @@ meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.3.html
 resources:
   license: http://dev.perl.org/licenses/
-  homepage: http://github.com/rkobes/cpan-sqlite/tree/master
+  homepage: http://github.com/rkobes/cpan-sqlite
   bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=CPAN-SQLite
   AnnoCPAN: http://annocpan.org/dist/CPAN-SQLite
   CPANForum: http://www.cpanforum.com/dist/CPAN-SQLite
