@@ -1181,7 +1181,7 @@ $dists = {
                            'cpanid' => 'GAAS',
                            'dist_file' => 'Data-Dump-1.06.tar.gz'
                          },
-          'CGI.pm' => {
+          'CGI' => {
                         'modules' => {
                                        'CGI::Fast' => 1,
                                        'CGI::Cookie' => 1,
@@ -1330,7 +1330,7 @@ $mods = {
                                       'mod_vers' => '0.99'
                                     },
           'CGI::Util' => {
-                           'dist_name' => 'CGI.pm',
+                           'dist_name' => 'CGI',
                            'mod_vers' => '1.5'
                          },
           'LWP::Sink::Tee' => {
@@ -1882,7 +1882,7 @@ $mods = {
                                  'mod_vers' => '0.03'
                                },
           'CGI::Carp' => {
-                           'dist_name' => 'CGI.pm',
+                           'dist_name' => 'CGI',
                            'mod_vers' => '1.29'
                          },
           'LWP::ConnCache' => {
@@ -2174,7 +2174,7 @@ $mods = {
                              'mod_vers' => '2.36'
                            },
           'CGI::Push' => {
-                           'dist_name' => 'CGI.pm',
+                           'dist_name' => 'CGI',
                            'mod_vers' => '1.04'
                          },
           'Apache::MP3::L10N::fr' => {
@@ -2442,7 +2442,7 @@ $mods = {
                                   'mod_vers' => '1.006'
                                 },
           'CGI::Cookie' => {
-                             'dist_name' => 'CGI.pm',
+                             'dist_name' => 'CGI',
                              'mod_vers' => '1.27'
                            },
           'Ace::Graphics::Glyph::span' => {
@@ -2630,7 +2630,7 @@ $mods = {
                                                         'mod_vers' => '1.03'
                                                       },
           'CGI::Fast' => {
-                           'dist_name' => 'CGI.pm',
+                           'dist_name' => 'CGI',
                            'mod_vers' => '1.07'
                          },
           'Font::Metrics::HelveticaBold' => {
@@ -2642,7 +2642,7 @@ $mods = {
                                            'mod_vers' => undef
                                          },
           'CGI' => {
-                     'dist_name' => 'CGI.pm',
+                     'dist_name' => 'CGI',
                      'mod_vers' => '3.25'
                    },
           'Bio::Das::AGPServer::SQLStorage::MySQL::DB' => {
@@ -3234,7 +3234,7 @@ $mods = {
                              'mod_vers' => undef
                            },
           'CGI::Pretty' => {
-                             'dist_name' => 'CGI.pm',
+                             'dist_name' => 'CGI',
                              'mod_vers' => '1.08'
                            },
           'Date::Language::Sidama' => {

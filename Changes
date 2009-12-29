@@ -1,4 +1,9 @@
 Revision history for Perl extension CPAN::SQLite.
+
+0.199 Dec 29, 2009
+  - require CPAN::DistnameInfo 0.09, which normalizes dist() for CGI.pm
+    (reported by Pete Armstrong)
+
 0.198 Sep 19, 2009
   - CPAN::SQLite::DBI::Index had an extra right parenthesis
     (reported by Alexey Borzenkov)
