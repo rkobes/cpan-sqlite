@@ -8,7 +8,7 @@ author:
     - 'Randy Kobes <randy.kobes@gmail.com>'
 requires:
     Archive::Tar:                  1.08
-    CPAN::DistnameInfo:            0
+    CPAN::DistnameInfo:            0.09
     File::Spec:                    0
     IO::Zlib:                      0
     DBD::SQLite:                   0

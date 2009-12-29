@@ -30,7 +30,7 @@ my $build = Module::Build->new(
   requires => $prereqs,
   script_files => \@exe_files,
   dist_version_from => 'lib/CPAN/SQLite.pm',
-  dist_author => ['Randy Kobes <r.kobes@uwinnipeg.ca>'],
+  dist_author => ['Randy Kobes <randy.kobes@gmail.com>'],
   dist_abstract_from => 'lib/CPAN/SQLite.pm',
 );
 
