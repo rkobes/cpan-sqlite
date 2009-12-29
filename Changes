@@ -1,5 +1,9 @@
 Revision history for Perl extension CPAN::SQLite.
 
+0.1995 Dec 30, 2009
+  - fix pod rendering:
+    https://rt.cpan.org/Ticket/Display.html?id=51891
+
 0.199 Dec 29, 2009
   - require CPAN::DistnameInfo 0.09, which normalizes dist() for CGI.pm
     (reported by Pete Armstrong)

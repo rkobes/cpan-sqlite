@@ -419,7 +419,7 @@ within C<CPAN.pm>.
 
 =back
 
-The attributes set within C<$CPAN::META->instance> depend
+The attributes set within C <<$CPAN::META->instance >> depend
 on the particular class.
 
 =over
