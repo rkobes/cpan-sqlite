@@ -320,7 +320,8 @@ A basic query then is constructed as
 
    $query->query(mode => $mode, $type => $value);
 
-with the results available as
+The return value is a boolean value, indicating the success of the query.
+If the query is successful, the results available as
 
    my $results = $query->{results}
 
