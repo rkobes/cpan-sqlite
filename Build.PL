@@ -18,7 +18,6 @@ my $prereqs = {'File::Spec' => 0,
                'Compress::Zlib' => 0,
                'CPAN::DistnameInfo' => 0.09,
                'DBD::SQLite' => 0,
-	       'File::HomeDir' => 0,
 	       'LWP::Simple' => 0,
 	      };
 

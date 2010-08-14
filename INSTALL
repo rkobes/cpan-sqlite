@@ -4,7 +4,6 @@ This package requires the following Perl modules:
   IO::Zlib
   CPAN::DistnameInfo
   DBD::SQLite
-  File::HomeDir
 
 Installation follows the standard
    perl Makefile.PL

@@ -1,7 +1,6 @@
 package CPAN::SQLite;
 use strict;
 use warnings;
-use File::HomeDir;
 require File::Spec;
 use Cwd;
 require CPAN::SQLite::META;
